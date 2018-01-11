@@ -32,13 +32,13 @@ function score_install() {
 function score_run() {
 	echo "$(tput setaf 1)[RUN] score $(tput sgr0)"		
     pushd ~/scored/
-    	./scored
+    	./Scored
     popd
 }
 
 function score_stop() {
 	echo "$(tput setaf 1)[STOP] score Wallet$(tput sgr0)"	
-	pkill scored
+	pkill Scored
 }
 
 function score_update() {
