@@ -5,14 +5,11 @@ FILE_RELEASE=Scored
 URL_RELEASE=https://github.com/MinseokOh/score_qtbuild/releases/download/${VERSION}/${FILE_RELEASE}
 
 function score_dependency() {
-	sudo apt-get update
-	sudo apt-get -y install unzip
-	sudo apt-get -y install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libboost-all-dev unzip libminiupnpc-dev python-virtualenv
-	sudo apt-get -y install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
-	sudo apt-get -y install software-properties-common && add-apt-repository ppa:bitcoin/bitcoin
-	sudo apt-get update
-	sudo apt-get -y install libdb4.8-dev libdb4.8++-dev
-	sudo apt-get -y install libzmq3-dev
+	sudo apt-get -y update  && sudo apt-get -y install build-essential  libssl-dev libdb++-dev  libboostall-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev libgmp-dev libgmp3-dev autoconf autogen automake libtool git
+	sudo apt-get install libdb5.3++ 
+	sudo add-apt-repository ppa:bitcoin/bitcoin 
+	sudo apt-get update 
+	sudo apt-get install libdb4.8-dev libdb4.8++-dev -y`
 }
 
 function score_install() {
