@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=2.0.0
+VERSION=v2.0.0
 FILE_RELEASE=Scored
 URL_RELEASE=https://github.com/MinseokOh/score_qtbuild/releases/download/${VERSION}/${FILE_RELEASE}
 
