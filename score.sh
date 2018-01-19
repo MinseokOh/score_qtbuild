@@ -46,7 +46,7 @@ function score_update() {
 }
 
 function score_conf() {
-	echo "~/.Score/Score.conf"
+	echo "$HOME/.Score/Score.conf"
 }
 
 COMMAND=$1
